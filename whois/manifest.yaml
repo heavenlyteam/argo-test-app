@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-nginx
+  name: whois
 spec:
   selector:
     matchLabels:
-      run: my-nginx
-  replicas: 4
+      run: whois
+  replicas: 1
   template:
     metadata:
       labels:
-        run: my-nginx
+        run: whois
     spec:
       containers:
-      - name: my-nginx
-        image: lenvl/echo-server:v1
+      - name: whois
+        image: lenvl/echo-server:v2
         ports:
         - containerPort: 1323
