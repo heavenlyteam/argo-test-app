@@ -16,4 +16,4 @@ spec:
       - name: my-nginx
         image: lenvl/echo-server:v1
         ports:
-        - containerPort: 80
+        - containerPort: 1323
